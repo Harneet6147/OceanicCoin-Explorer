@@ -1,0 +1,87 @@
+@font-face {
+    font-family: water;
+    src: url(/src/water.TTF);
+}
+
+body {
+    margin: 0;
+    background-image: url("/src/assets/bg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+}
+
+.container {
+    margin-top: 250px;
+}
+
+.btnW {
+    font-family: water;
+    /* font-weight: bold; */
+    font-size: 60px;
+    font-weight: 1px;
+    width: 430px;
+    height: 260px;
+    position: relative;
+    border-radius: 22% 34% 53% 50% / 49% 43% 37%;
+    text-transform: uppercase;
+    color: rgba(0, 5, 8, 0.82);
+    border: none;
+    transition: border-radius .5% ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.btnW:before,
+.btnW:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+}
+
+.btnW:before {
+    width: 15px;
+    height: 15px;
+    top: 40px;
+    left: 25px;
+    border-radius: 55% 33% 22% 44% / 33% 44% 33% 44%;
+
+}
+
+.btnW:after {
+    width: 40px;
+    height: 10px;
+    top: 18px;
+    left: 45px;
+    border-radius: 55% 33% 22% 44% / 33% 44% 33% 44%;
+}
+
+.btnW--one {
+    box-shadow: inset 10px 10px 10px 10px rgb(0 0 0 / 8%),
+        15px 25px 10px rgb(0 0 0 / 15%),
+        15px 20px 20px rgb(0 0 0 / 5%),
+        inset -10px -10px 15px rgb(255 255 255 / 74%),
+        inset 6px 40px 30px 0 rgb(0 173 255 / 74%),
+        inset 18px 89px 20px 0 rgb(18 204 252 / 88%),
+        12px 20px 25px 0px rgb(58 162 244 / 82%);
+}
+
+.btnW--two {
+    box-shadow: inset 10px 10px 10px 10px rgb(0 0 0 / 8%),
+        15px 25px 10px rgb(0 0 0 / 15%),
+        15px 20px 20px rgb(0 0 0 / 5%),
+        inset -10px -10px 15px rgb(255 255 255 / 93%);
+
+}
+
+.btnW:hover {
+    border-radius: 25% 30% 50% 55% / 43% 48% 42% 55%;
+    box-shadow: inset 10px 10px 10px 10px rgb(0 0 0 / 8%),
+        15px 25px 10px rgb(0 0 0 / 15%),
+        15px 20px 20px rgb(0 0 0 / 5%),
+        12px 20px 25px 0px rgb(3, 158, 247);
+
+}

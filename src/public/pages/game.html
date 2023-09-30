@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanicCoin Explorer</title>
+    <link rel="stylesheet" href="/src/public/styles/canvas.css">
+</head>
+
+<body>
+    <canvas></canvas>
+    <div id="popup-container" class="popup-container">
+        <div id="popup" class="popup">
+            <h1>Game Over</h1>
+            <h2> You Won: </h2>
+            <h2 id="coins-won"> </h2>
+            <button id="claim-reward-button">Claim Reward</button>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="/src/js/ethereum/GameContract.js"></script>
+    <script src="/src/js/game.js"> </script>
+</body>
+
+</html>
