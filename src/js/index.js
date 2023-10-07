@@ -23,7 +23,6 @@ async function connectWalletMetamask() {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const accounts = await provider.send("eth_requestAccounts", []);
             signer = provider.getSigner();
-            // BoContract = BoStaffContract(provider);
             walletAddress = accounts[0];
             //console.log(accounts[0]);
         } catch (err) {
